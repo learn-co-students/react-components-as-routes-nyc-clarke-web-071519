@@ -273,7 +273,7 @@ components:
 ReactDOM.render((
   <Router>
     <React.Fragment>
-      <Route path="/" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/login" component={Login} />
     </React.Fragment>
@@ -299,7 +299,7 @@ users to trigger our routes without requiring a manual change of the address
 bar.
 
 ### NavLinks
-
+   
 What good are routes, if users don't know how to find them or what they are?
 
 The React Router API provides two components that enable us to trigger our
